@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .coming-soon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+    }
+    .coming-soon h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+    .coming-soon p {
+      font-size: 1.5rem;
+      color: #6c757d;
+    }
+    .eta {
+      font-size: 1.25rem;
+      margin-top: 20px;
+      color: #343a40;
+    }
+    .close-button {
+      position: fixed; /* Fixed positioning to keep it at the top-left */
+      top: 10px; /* Adjusted for better alignment */
+      left: 10px; /* Adjusted for better alignment */
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      background-color: #dc3545; /* Red background */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000; /* Ensure it stays above other elements */
+    }
+    .close-button:hover {
+      background-color: #c82333; /* Darker red on hover */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container coming-soon">
+  <button class="close-button" onclick="window.location.href='index.html'">&times;</button>
+  <div>
+    <h1>We're Coming Soon!</h1>
+    <p>Our platform is under construction. We'll be here soon with a new amazing experience.</p>
+    <div class="eta">ETA: January 1, 2025</div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
